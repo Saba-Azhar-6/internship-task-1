@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saba Azhar | Portfolio</title>
+
+  <style>
+  @media (max-width: 768px) {
+    section {
+      height: auto !important;
+    }
+    
+
+    #slider > div {
+      flex-direction: column !important;
+      gap: 20px !important;
+      padding: 20px !important;
+    }
+    
+    #slider img {
+      width: 100% !important;
+      height: 200px !important;
+    }
+    
+    #slider h1 {
+      font-size: 24px !important;
+    }
+    
+    nav ul {
+      gap: 10px !important;
+      font-size: 12px !important;
+    }
+  }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION  -->
+<nav style="background-color: black; padding: 15px 30px; display: flex; justify-content: space-between; ">
+  <a href="#" style="color: white; font-size: 22px; text-decoration: none; ">Saba Azhar</a>
+  <ul style="list-style: none; display: flex; gap: 25px;">
+    <li><a href="#" style="color: lightgray; text-decoration: none;">Home</a></li>
+    <li><a href="#" style="color: lightgray; text-decoration: none;">Projects</a></li>
+    <li><a href="#" style="color: lightgray; text-decoration: none;">Services</a></li>
+    <li><a href="#" style="color: lightgray; text-decoration: none;">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+<!-- HERO SLIDER -->
+  <section style="position: relative; width: 100%; height: 600px; overflow: hidden;">
+
+    <div id="slider" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s ease;">
+
+      <!-- SLIDE 1 -->
+      <div style="min-width: 100%; width:100%; flex-shrink: 0; height: 100%; background-color: darkblue; display: flex; align-items: center; gap: 60px;">
+        
+        <img src="https://i.ibb.co/TBf8GKSD/bata.png" alt="Bata Website Project" style="width: 400px; height: 350px; border-radius: 20px;">
+        
+        <div>
+          <h2 style="color: goldenrod; font-size: 14px;">Project 01</h2>
+          <h1 style="color: white; font-size: 40px;">Bata Website</h1>
+          <p style="color: lightgray; font-size: 16px;"> Shoe brand website with navigation bar, banner section and footer.</p>
+          <a href="https://i.ibb.co/TBf8GKSD/bata.png" style="background-color: goldenrod; color: black; padding: 10px 20px; text-decoration: none; border-radius: 8px;" onmouseover="this.style.backgroundColor='darkgoldenrod'; " onmouseout="this.style.backgroundColor='goldenrod';">View Project</a>
+        </div>
+
+      </div>
+
+	<!-- SLIDE 2 -->
+	<div style=" min-width:100%; width:100%; height:100%; flex-shrink:0; background-color:darkslategray; display:flex; align-items:center; gap:60px;" >
+	<img src="https://i.ibb.co/LXMsh57p/dentist.png" alt="Dentist website/image not available" style="width:400px; height:350px; border-radius:20px;">
+	<div>
+	 <h2 style="color: goldenrod; font-size: 14px;">Project 02</h2>
+          <h1 style="color: white; font-size: 40px;">Dentist Hygiene Website</h1>
+          <p style="color: lightgray; font-size: 16px;"> A clean informational website for a dental association with kids and adults sections.</p>
+          <a href="https://i.ibb.co/LXMsh57p/dentist.png" style="background-color: goldenrod; color: black; padding: 10px 20px; text-decoration: none; border-radius: 8px;" onmouseover="this.style.backgroundColor='darkgoldenrod'; " onmouseout="this.style.backgroundColor='goldenrod';">View Project</a>
+
+	</div>
+	</div>
+	
+	<!-- SLIDE 3 -->
+	<div style=" min-width:100%; width:100%; height:100%; flex-shrink:0; background-color:darkred; display:flex; align-items:center; gap:60px;" >
+	<img src="https://picsum.photos/seed/hospital/400/350" alt="Hospital website project" style="width:400px; height:350px; border-radius:20px;">
+	<div>
+	 <h2 style="color: goldenrod; font-size: 14px;">Project 03</h2>
+          <h1 style="color: white; font-size: 40px;">Hospital Page</h1>
+          <p style="color: lightgray; font-size: 16px;"> A hospitality industry webpage built with HTML featuring tables, lists and image layouts.</p>
+          <a href="#" style="background-color: goldenrod; color: black; padding: 10px 20px; text-decoration: none; border-radius: 8px;" onmouseover="this.style.backgroundColor='darkgoldenrod'; " onmouseout="this.style.backgroundColor='goldenrod';">View Project</a>
+	</div>
+	</div>
+
+	<!-- SLIDE 4 -->
+	<div style=" min-width:100%; width:100%; height:100%; flex-shrink:0; background-color:darkolivegreen; display:flex; align-items:center; gap:60px;" >
+	<img src="https://picsum.photos/seed/bakery/400/350" alt="Bakery management system project" style="width:400px; height:350px; border-radius:20px;">
+	<div>
+	 <h2 style="color: goldenrod; font-size: 14px;">Project 04</h2>
+          <h1 style="color: white; font-size: 40px;">Bakery Management System</h1>
+          <p style="color: lightgray; font-size: 16px;"> A complete database management system for a bakery built using SQL with full CRUD operations.</p>
+          <a href="#" style="background-color: goldenrod; color: black; padding: 10px 20px; text-decoration: none; border-radius: 8px;" onmouseover="this.style.backgroundColor='darkgoldenrod'; " onmouseout="this.style.backgroundColor='goldenrod';">View Project</a>
+	</div>
+	</div>
+    </div>
+
+
+	<!-- ARROW BUTTONS -->
+    <button onclick="prevSlide()" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background-color: gray; color: white; border: none; width: 48px; height: 48px; border-radius: 50%; font-size: 20px; cursor: pointer; opacity: 0.5;">←</button>
+
+    <button onclick="nextSlide()" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background-color: gray; color: white; border: none; width: 48px; height: 48px; border-radius: 50%; font-size: 20px; cursor: pointer; opacity: 0.5;">→</button>
+
+
+	<!-- DOTS -->
+    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px;">
+      <span onclick="goToSlide(0)" style="width: 12px; height: 12px; background-color: goldenrod; border-radius: 50%; cursor: pointer;"></span>
+      <span onclick="goToSlide(1)" style="width: 12px; height: 12px; background-color: gray; border-radius: 50%; cursor: pointer;"></span>
+      <span onclick="goToSlide(2)" style="width: 12px; height: 12px; background-color: gray; border-radius: 50%; cursor: pointer;"></span>
+      <span onclick="goToSlide(3)" style="width: 12px; height: 12px; background-color: gray; border-radius: 50%; cursor: pointer;"></span>
+    </div>
+  </section>
+
+  <!-- JAVASCRIPT will go here -->
+<script>
+
+    let currentSlide = 0;
+    let totalSlides = 4;
+
+    function goToSlide(number) {
+      currentSlide = number;
+      
+      // Move the slider
+      document.getElementById('slider').style.transform = 'translateX(calc(-' + currentSlide + ' * 100%))';
+      
+      // Update dots color
+      let dots = document.querySelectorAll('span[onclick*="goToSlide"]');
+      dots.forEach(function(dot) {
+        dot.style.backgroundColor = 'gray';
+      });
+      dots[currentSlide].style.backgroundColor = 'goldenrod';
+    }
+
+    function nextSlide() {
+      if (currentSlide === totalSlides - 1) {
+        goToSlide(0);
+      } else {
+        goToSlide(currentSlide + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide === 0) {
+        goToSlide(totalSlides - 1);
+      } else {
+        goToSlide(currentSlide - 1);
+      }
+    }
+
+    // Auto rotate every 5 seconds
+    setInterval(nextSlide, 5000);
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowRight') {
+        nextSlide();
+      }
+      if (e.key === 'ArrowLeft') {
+        prevSlide();
+      }
+    });
+
+  </script>
+</body>
+
+</html>
